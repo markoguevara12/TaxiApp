@@ -1,4 +1,6 @@
-const navItem = document.querySelectorAll('.nav-items ul li')
+const navItem = document.querySelectorAll('.nav-items ul li ')
+const enviar = document.getElementById('btn-enviar')
+
 
 window.addEventListener('scroll', function() {
     const navbar = document.getElementById('navbar');
@@ -16,4 +18,8 @@ window.addEventListener('scroll', function() {
             item.style.color = "#fff "; 
         });
     }
-});
+})
+
+enviar.addEventListener('click',()=>{
+    alert("enviando correo electrónico!")
+})

@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/material-ui/4.12.4/index.js" integrity="sha512-wEnX3bNd/CdyrOFR0KIGlHihK/w9x3/It8Vc18aymEF/F/f1q0Mq8T+GSxF1wYUACLEGECapuIYQdQlKY1LBJw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>TaxiApp</title>
 </head>
 <body>
   
@@ -17,10 +19,10 @@
     </div>
     <div class="nav-items">
         <ul>
-            <li >Home</li>
-            <li >Services</li>
-            <li >About us</li>
-            <li >Contact</li>
+            <a href="#"><li >Home</li></a>
+            <a href="#services"><li>Services</li></a>
+            <a href="/about.html"><li >About us</li></a>
+            <a href="#contact"><li >Contact</li></a>
         </ul>
     </div>
 </nav>
@@ -55,6 +57,72 @@
 </section>
 
 
+<section id="contact" class="contact-section">
+    <h2>Contáctanos</h2>
+    <div class="contact-container">
+        
+        <div class="contact-info">
+            <h3>Información de Contacto</h3>
+            <p><i class="fa-solid fa-phone"></i> +506 1234-5678</p>
+            <p><i class="fa-solid fa-envelope"></i> info@tutaxi.com</p>
+            <p><i class="fa-solid fa-location-dot"></i> 123 Calle Principal, Santa Cruz, Guanacaste</p>
+        </div>
+
+        
+        <div class="contact-form">
+            <h3>Envíanos un mensaje</h3>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button id="btn-enviar" type="button" class="contact-btn">Enviar Mensaje</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-container">
+        
+        <div class="footer-links">
+            <h4>Enlaces Rápidos</h4>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </div>
+        
+       
+        <div class="footer-contact">
+            <h4>Contacto</h4>
+            <p><i class="fa-solid fa-phone"></i> +506 123-456</p>
+            <p><i class="fa-solid fa-envelope"></i> info@tutaxi.com</p>
+            <p><i class="fa-solid fa-location-dot"></i> 123 Calle Principal, Santa Cruz, Guanacaste</p>
+        </div>
+
+        <div class="footer-socials">
+            <h4>Síguenos</h4>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 TuTaxi. Todos los derechos reservados.</p>
+    </div>
+</footer>
 
 
 </body>
